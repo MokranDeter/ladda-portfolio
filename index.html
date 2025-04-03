@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LADDA Portfolio - Immersif</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #002f5f 0%, #0052cc 100%);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1600972061532-3c8f8852e7a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.08;
+      z-index: -1;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .ladda-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .image-box {
+      position: relative;
+      margin-bottom: 40px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: none;
+      transition: transform 0.4s ease;
+      background: none;
+    }
+
+    .image-box:hover {
+      transform: scale(1.02);
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .floating-cans {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -2;
+    }
+
+    .can {
+      position: absolute;
+      width: 80px;
+      opacity: 0.15;
+      animation: float 15s infinite ease-in-out;
+    }
+
+    .can:nth-child(odd) {
+      animation-duration: 20s;
+      opacity: 0.1;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(120vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-20vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  <div class="floating-cans">
+<img src="image3.png" class="can" style="left:10%; top:0px;" />
+<img src="image3.png" class="can" style="left:15%; top:100px;" />
+<img src="image3.png" class="can" style="left:20%; top:200px;" />
+<img src="image3.png" class="can" style="left:25%; top:300px;" />
+<img src="image3.png" class="can" style="left:30%; top:400px;" />
+<img src="image3.png" class="can" style="left:35%; top:500px;" />
+<img src="image3.png" class="can" style="left:40%; top:600px;" />
+<img src="image3.png" class="can" style="left:45%; top:700px;" />
+<img src="image3.png" class="can" style="left:50%; top:0px;" />
+<img src="image3.png" class="can" style="left:55%; top:100px;" />
+<img src="image3.png" class="can" style="left:60%; top:200px;" />
+<img src="image3.png" class="can" style="left:65%; top:300px;" />
+<img src="image3.png" class="can" style="left:70%; top:400px;" />
+<img src="image3.png" class="can" style="left:75%; top:500px;" />
+<img src="image3.png" class="can" style="left:80%; top:600px;" />
+<img src="image3.png" class="can" style="left:85%; top:700px;" />
+<img src="image3.png" class="can" style="left:90%; top:0px;" />
+<img src="image3.png" class="can" style="left:95%; top:100px;" />
+<img src="image3.png" class="can" style="left:0%; top:200px;" />
+<img src="image3.png" class="can" style="left:5%; top:300px;" />
+
+  </div>
+  <div class="container">
+    <div class="ladda-name">LADDA</div>
+
+    <div class="image-box" style="">
+      <img src="image1.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image2.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image3.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image4.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image5.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image6.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image7.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image8.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image9.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image10.png" alt="LADDA Visuel" />
+    </div>
+    
+    <div class="image-box" style="">
+      <img src="image11.png" alt="LADDA Visuel" />
+    </div>
+    
+  </div>
+</body>
+</html>
